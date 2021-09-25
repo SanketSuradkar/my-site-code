@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css_file/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js_files/site.js"></script> <!-- this is javascript tag located outside the folder -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/X-icon" href="/images/logo4.png">
+    <title>SanketSS</title>
+</head>
+
+<body onload="myfunction()">
+    <div id="loading"></div>
+    <header>
+
+        <nav>
+            <div class="row clearfix">
+                <img src="/images/logo.png" alt="site logo" class="logo" onclick="hmpage()">
+                <ul class="main-nav" id="check-class">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign.html">Sing-up</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cont.html">Contact</a></li>
+                    <li><a href="ser.html">Services</a></li>
+                </ul>
+                <a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <!-- <h1>welcome to <span class="colorchange">Sanket-SS </span>site.<br>
+                blog for problem solving and Home for technology.
+            </h1> -->
+            <h1>Fixing some issues</h1>
+            <a href="download.html" class="btn btn-full">click to download</a>
+            <a href="discussion.html" class="btn btn-nav">click for discussion</a>
+            
+        </div>
+    </header>
+    <footer class="flooter_" style="width: 100%;height: 100px;  background-color: #010101;">
+        <h5 style="color: rgb(85, 82, 82); font-family: 'Dosis', sans-serif; line-height: 100px; text-align: center;">
+            &#169;Copyright <a href="https://www.instagram.com/aka_assassin__/" id="cc">Sanket-SS</a> 2020 | Last update on <date>8/9/2021</date></h5>
+    </footer>
+    <script>
+        var preloder= document.getElementById('loading');
+        function myfunction(){
+            preloder.style.display ="none";
+        }
+    </script>
+</body>
+
+</html>

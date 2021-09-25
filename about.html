@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css_file/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js_files/site.js"></script> <!-- this is javascript tag located outside the folder -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/X-icon" href="/images/logo4.png">
+    <title>SanketSS</title>
+</head>
+
+<body onload="myfunction()">
+    <div id="loading"></div>
+
+    <!-- <div class="spinner"></div> -->
+    <header>
+
+
+        <nav>
+            <div class="row clearfix">
+                <img src="/images/logo.png" alt="site logo" class="logo" onclick="hmpage()">
+                <ul class="main-nav" id="check-class">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="sign.html">Sing-up</a></li>
+                    <li class="active"><a href="about.html">About</a></li>
+                    <li><a href="cont.html">Contact</a></li>
+                    <li><a href="ser.html">Services</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header" id="topp" style="text-align:inherit;">
+            <h1 style="font-size: 35px;">
+                <span class="colorchange">About</span>
+            </h1>
+            <h2>Hello and welcome, This site name is Sanket-SS, designed, developed by<a
+                    href="https://www.instagram.com/aka_assassin__/"> Sanket Suradkar</a> and hosted by the <a
+                    href="https://www.netlify.com/">netlify.com</a>,
+                this site is for error solving and for several files download that i will mention on my Blog and on my
+                YouTube channel.<p></p>
+                The objective behind the site is to provide well known information about tech, and to solve the
+                application or the site basic problems
+                that every person face whenever surfing the internet or handling any application. for ferther
+                information stay connected with this site
+                and follow the social links mentain <a href="cont.html">here</a>.
+                <br><br>
+                <div class="new1">
+                    <div class="new"><a href="#null" id="new-btn" onclick="slideshow2()"> What's New</a></div>
+                    <ul id="check-class2">
+                        <br><br>
+                            <div id="wht-new-area">
+                                &bull; Added new Sign in tab with Password management. <br>
+                                &bull; Added new features in About tab.<br>
+                                &bull; Added a new Website logo 19/7/21.<br>
+                                &bull; Added new deature Slideshow 20/7/21. <br>
+                                &bull; Added referal code of truelincer 8/3/21. <br>
+                                &bull; Added discussion button for discussion panel on home page 8/9/21.
+                            </div>
+                        
+                    </ul>
+                </div>
+
+                <br><br><br><br>
+
+            </h2>
+            <!-- <a href="download.html" class="btn btn-full">click to download</a>
+            <a href="discussion.html" class="btn btn-nav">click for discussion</a> -->
+            <div class="h-three">
+                <h3 style="color: rgb(167, 167, 167);">&#169;Copyright <a
+                        style="color: rgb(229, 226, 226); text-decoration: underline rgba(250, 1, 1, 0.507);"
+                        href="https://www.instagram.com/aka_assassin__/">Sanket-SS</a> 2020</h3>
+            </div>
+
+        </div>
+
+    </header>
+
+    <footer class="flooter_" style="width: 100%;height: 100px;  background-color: #010101;">
+        <h5 style="color: rgb(85, 82, 82); font-family: 'Dosis', sans-serif; line-height: 90px; text-align: center">
+            &#169;Copyright <a href="https://www.instagram.com/aka_assassin__/" id="cc">Sanket-SS</a> 2020 | Last update
+            on <date>8/9/2021</date>
+        </h5>
+    </footer>
+    <script>
+        var preloder = document.getElementById('loading');
+        function myfunction() {
+            preloder.style.display = "none";
+        }
+    </script>
+</body>
+<style>
+    header {
+        height: 126vh;
+    }
+
+    .main-content-header {
+        margin-top: 60px;
+    }
+
+    .main-content-header a {
+        text-decoration: none;
+        color: rgb(120, 165, 248);
+    }
+
+    .main-content-header a:hover {
+        text-decoration: none;
+        color: rgb(11, 89, 235);
+        transition: 0.4s ease;
+    }
+
+    .main-content-header :nth-child(3) {
+        text-decoration: none;
+        text-align: right;
+
+    }
+
+    .new {
+        color: orangered;
+        float: left;
+        padding: 4px 6px;
+        border: solid rgb(0, 76, 255) 0.5px;
+    }
+
+
+    #check-class2{
+        display: none;
+        
+        
+    }
+    
+    #wht-new-area{
+        font-size: 3vh;
+        border: white solid 1px ;
+        text-align: justify;  
+        padding: 8px;
+        color: goldenrod;
+        
+    }
+   
+
+    /* for responsive */
+    @media only screen and (max-width: 851px) {
+
+        .main-content-header {
+            margin-top: 130px;
+            font-size: 15px;
+            padding: 0px;
+
+        }
+
+        header {
+            height: 125vh;
+        }
+        #wht-new-area{
+            font-size: 1.8vh;
+        }
+    }
+
+    @media only screen and (max-width: 393px) {
+
+        .main-content-header {
+            margin-top: 130px;
+            
+        }
+    }
+</style>
+
+</html>

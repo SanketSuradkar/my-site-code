@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="css_file/style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="/js_files/site.js"></script> <!-- this is javascript tag located outside the folder -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/X-icon" href="/images/logo4.png">
+    <title>SanketSS</title>
+</head>
+
+<body onload="myfunction()">
+    <div id="loading"></div>
+
+    <!-- <div class="spinner"></div> -->
+    <header>
+
+
+        <nav>
+            <div class="row clearfix">
+                <img src="/images/logo.png" alt="site logo" class="logo" onclick="hmpage()">
+                <ul class="main-nav" id="check-class">
+                    <li><a href="index.html">Home</a></li>
+                    <li class="active"><a href="sign.html">Sing-up</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="cont.html">Contact</a></li>
+                    <li><a href="ser.html">Services</a></li>
+                </ul>
+                <a href="#" class="mobile-icon" onclick="slideshow()"><i class="fa fa-bars"></i></a>
+            </div>
+        </nav>
+        <div class="main-content-header">
+            <!-- <h1><span class="colorchange">Sorry this website is temporarily under maintenance visit some time later...</span><br>
+                
+            </h1> -->
+            <div class="center">
+                <h1><span class="colorchange">Register</span></h1>
+                <form onsubmit="submited()" autocomplete="on" action="thnz.html" netlify>
+                    <div class="txt_field">
+                        <input type="text" required placeholder="">
+                        <span>
+
+                        </span>
+                        <label>Username</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="email" required placeholder="">
+                        <span>
+
+                        </span>
+                        <label>Email</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="date" id="datehd" required placeholder="">
+                        <span>
+
+                        </span>
+                        <label>Date of birth</label>
+                    </div>
+                    <div class="txt_field">
+                        <input type="password" required placeholder="">
+                        <span>
+
+                        </span>
+                        <label>Password</label>
+                    </div>
+                    <!-- <div class="pass">Forgot Password?</div> -->
+                    <input type="submit" value="Register">
+                    <div class="signup_link">
+                        Already a member? <a href="sign.html">Login</a>
+                    </div>
+                </form>
+            </div>
+
+            <!-- <a href="download.html" class="btn btn-full">click to download</a>
+            <a href="discussion.html" class="btn btn-nav">click for discussion</a> -->
+
+
+        </div>
+    </header>
+    <footer class="flooter_" style="width: 100%;height: 100px;  background-color: #010101;">
+        <h5 style="color: rgb(85, 82, 82); font-family: 'Dosis', sans-serif; line-height: 90px; text-align: center">
+            &#169;Copyright <a href="https://www.instagram.com/aka_assassin__/" id="cc">Sanket-SS</a> 2020 | Last update on <date>8/9/2021</date></h5>
+    </footer>
+    <script>
+        var preloder = document.getElementById('loading');
+        function myfunction() {
+            preloder.style.display = "none";
+        }
+
+
+    </script>
+</body>
+<style>
+  .center{
+    position: absolute;
+    top: 50%;
+    left: 50%;  
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: rgba(255, 8, 8, 0.096);
+}
+.center h1{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 1px solid silver;
+    
+}
+.center form{
+    padding: 0 40px;
+    box-sizing: border-box;
+}
+form .txt_field{
+    position: relative;
+    border-bottom: 2px solid #adadad;
+    margin: 30px 0;
+}
+
+.txt_field input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: white;
+}
+
+
+.txt_field label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: #adadad;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+    transition: .5s;
+}
+#datehd{
+    color: transparent;
+}
+#datehd:focus-within{
+    color: white;
+}
+
+
+.txt_field span::before{
+    content: '';
+    position: absolute;
+    top: 40px;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #0299fd;
+    transition: .5s;
+}
+.txt_field input:focus ~ label,
+.txt_field input:valid ~ label{
+    top:  -5px;
+    color:  #065dff;
+}
+.txt_field input:focus ~ span::before,
+.txt_field input:valid ~ span::before{
+    width: 100%;
+}
+.pass{
+    margin: -5px 0 20px 5px;
+    color: #ebebebed;
+    cursor: pointer;
+}
+.pass:hover{
+    text-decoration: underline;
+}
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    border-radius: 20px;
+    font-size: 18px;
+    color: red;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    background-color: transparent;
+    background-color:  rgba(255, 0, 0, 0.062);
+    margin-bottom: 20px;
+}
+input[type="submit"]:hover{
+    border-color: #2691d9;
+    transition: .5s;
+    color: #0991ec;
+    background-color:  #2691d915;
+}
+.signup_link a{
+    color: #0796f5;
+    text-decoration: none;
+    
+    
+}
+.signup_link a:hover{
+    
+    text-decoration: underline;
+} 
+
+/* for responsive  */
+@media only screen and (max-width: 559px){
+    .btn-full{
+        margin-bottom: 20px;       
+    }
+    h1{
+        font-size: 160%;
+    }
+    #emcode{
+        width: 250;
+    }
+     .center{
+           
+            margin-top: 90px;
+            
+          
+        }
+    header{
+        height: 550;
+    } 
+}
+</style>
+
+</html>
